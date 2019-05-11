@@ -29,9 +29,9 @@ class BurgerBuilder extends Component {
         // ingredients: null,
         // totalPrice: 4,
         // purchasable: false,
-        purchasing: false,
-        loading: false,
-        error: false
+        purchasing: false
+        // loading: false,
+        // error: false
     }
 
     componentDidMount () { 
@@ -167,9 +167,9 @@ class BurgerBuilder extends Component {
                 purchaceCancelled={this.purchaseCancelHandler} 
                 purchaceContinued={this.purchaseContinueHandler} />
         }  
-        if (this.state.loading) {
-            orderSummary = <Spinner />;
-        }      
+        // if (this.state.loading) {
+        //     orderSummary = <Spinner />;
+        // }      
 
         return (
             <Aux>
